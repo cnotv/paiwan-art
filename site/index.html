@@ -16,11 +16,10 @@
     <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
     <symbol id="i-ig" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
     <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
-    <symbol id="i-back" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></symbol>
   </svg>
 
   <header class="nav">
-    <a class="logo" href="#top"><span>❀</span> Paiwan</a>
+    <a class="logo" href="#top"><img src="img/avatar.jpg" alt="" width="44" height="44">Paiwan</a>
     <nav class="links">
         <a href="#books">Children's books</a>
         <a href="#commissions">Commissions</a>
@@ -41,24 +40,11 @@
 
   <main id="top">
     <section class="hero" aria-roledescription="carousel" aria-label="Featured artwork">
-      <article class="slide is-active" aria-label="Slide 1 of 3">
-        <img class="slide-bg" src="img/ember-tree.jpg" alt="">
-        <figure class="art art-back"><img src="img/mushrooms.jpg" alt="Mushroom painting in ink and watercolor"></figure>
-        <figure class="art art-front"><img src="img/plums.jpg" alt="Blue plums on a cobalt band, gouache"></figure>
-        <p class="caption">“Plums on cobalt”, gouache ↑</p>
-      </article>
-      <article class="slide" aria-label="Slide 2 of 3">
-        <img class="slide-bg" src="img/starry-night.jpg" alt="">
-        <figure class="art art-back"><img src="img/fig-bee.jpg" alt="Fig branch with a bee, gouache in a sketchbook"></figure>
-        <figure class="art art-front"><img src="img/blue-muse.jpg" alt="Blue face surrounded by yellow flowers, watercolor"></figure>
-        <p class="caption">“Blue Muse”, watercolor and ink ↑</p>
-      </article>
-      <article class="slide" aria-label="Slide 3 of 3">
-        <img class="slide-bg" src="img/lily-pond.jpg" alt="">
-        <figure class="art art-back"><img src="img/lotus-pumpkin.jpg" alt="Lotus pod and pumpkin study"></figure>
-        <figure class="art art-front"><img src="img/coffee-rose.jpg" alt="Rose with bees painted in coffee and ink"></figure>
-        <p class="caption">“Coffee Rose”, coffee and ink ↑</p>
-      </article>
+      <div class="hero-bg" aria-hidden="true">
+        <img class="slide is-active" src="img/ember-tree.jpg" alt="">
+        <img class="slide" src="img/starry-night.jpg" alt="">
+        <img class="slide" src="img/lily-pond.jpg" alt="">
+      </div>
 
       <div class="hero-copy">
         <p class="eyebrow">Botanical · Fantasy · Surreal</p>
@@ -70,11 +56,23 @@
         </div>
       </div>
 
-      <div class="controls">
-        <span class="count"><span data-current>01</span> / 03</span>
-        <div class="bars"><i></i><i></i><i></i></div>
-        <button class="round" data-prev aria-label="Previous slide"><svg class="icon"><use href="#i-back"/></svg></button>
-        <button class="round" data-next aria-label="Next slide"><svg class="icon"><use href="#i-arrow"/></svg></button>
+      <div class="hero-art">
+        <div class="slide is-active">
+          <img class="art art-back" src="img/mushrooms.jpg" alt="Mushroom painting in ink and watercolor">
+          <img class="art art-front" src="img/plums.jpg" alt="Blue plums on a cobalt band, gouache">
+        </div>
+        <div class="slide">
+          <img class="art art-back" src="img/fig-bee.jpg" alt="Fig branch with a bee, gouache in a sketchbook">
+          <img class="art art-front" src="img/blue-muse.jpg" alt="Blue face surrounded by yellow flowers, watercolor">
+        </div>
+        <div class="slide">
+          <img class="art art-back" src="img/lotus-pumpkin.jpg" alt="Lotus pod and pumpkin study">
+          <img class="art art-front" src="img/coffee-rose.jpg" alt="Rose with bees painted in coffee and ink">
+        </div>
+      </div>
+
+      <div class="bars" role="group" aria-label="Choose slide">
+        <button class="on" aria-label="Slide 1"></button><button aria-label="Slide 2"></button><button aria-label="Slide 3"></button>
       </div>
     </section>
 
@@ -205,7 +203,7 @@
         </div>
       </div>
       <footer class="footer">
-        <a class="logo" href="#top"><span>❀</span> Paiwan</a>
+        <a class="logo" href="#top"><img src="img/avatar.jpg" alt="" width="44" height="44">Paiwan</a>
         <p>© 2026 Paiwan Bootvicha. All artwork is hand painted and protected by copyright.</p>
         <nav><a href="#books">Books</a><a href="#commissions">Commissions</a><a href="#originals">Originals</a><a href="https://www.instagram.com/paiwan.art/" target="_blank" rel="noopener">Instagram</a></nav>
       </footer>
