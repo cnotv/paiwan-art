@@ -1,0 +1,10 @@
+# The project name keeps this stack separate from other compose projects on the same host.
+name: paiwan-art
+
+services:
+  website:
+    image: ghcr.io/cnotv/paiwan-art:latest
+    # generative-art already binds 3000 and 3001 on the Hetzner host.
+    ports:
+      - ${HOST_PORT:-3002}:80
+    restart: unless-stopped
