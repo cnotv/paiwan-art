@@ -1,6 +1,6 @@
 # Paiwan Art
 
-Portfolio site for illustrator Paiwan Bootvicha ([@paiwan.art](https://www.instagram.com/paiwan.art/)): children's book illustration, studio work and a gallery of paintings. Portfolio only; nothing is offered for sale. Plain HTML, CSS and a few lines of JS in `site/`, served by nginx.
+Portfolio site for illustrator [@paiwan.art](https://www.instagram.com/paiwan.art/): children's book illustration, studio work and a gallery of paintings. Portfolio only; nothing is offered for sale. Plain HTML, CSS and a few lines of JS in `site/`, served by nginx.
 
 Design: [Figma file](https://www.figma.com/design/0fus6LIHd73H5YmY4CVo7P).
 
